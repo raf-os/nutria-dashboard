@@ -1,0 +1,17 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "folder-color.pathColors": [
+        {
+            "folderPath": "nutria-dashboard/src/app/",
+            "color": "foldercolorizer.color_ff3366"
+        },
+        {
+            "folderPath": "nutria-dashboard/src/components/",
+            "color": "foldercolorizer.color_cccc99"
+        },
+        {
+            "folderPath": "nutria-dashboard/src/lib/",
+            "color": "foldercolorizer.color_00cc66"
+        }
+    ]
+}
