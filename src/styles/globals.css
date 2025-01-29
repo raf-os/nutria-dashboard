@@ -5,6 +5,8 @@
 :root {
   --background: #232c3b;
   --foreground: #ededed;
+  --bg-accent: #303747;
+  --bg-accent-border: #4c5361;
 }
 
 body {
@@ -14,6 +16,10 @@ body {
 }
 
 .sidenav {
-  @apply w-full h-full border-r bg-slate-700 text-[var(--foreground)] border-r-slate-600;
-  box-shadow: 0px 0 25px 5px rgba(0, 0, 0, 0.25);
+  @apply w-full h-full border-r bg-[var(--bg-accent)] text-[var(--foreground)] border-r-[var(--bg-accent-border)];
+  box-shadow: 5px 0 25px -5px rgba(0, 0, 0, 0.25);
+}
+
+a.link-blue {
+  @apply text-blue-600 hover:text-blue-800;
 }

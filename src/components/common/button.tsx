@@ -9,7 +9,7 @@ export default function Button({ children, className, ...rest}: ButtonProps) {
         <button
             {...rest}
             className = {clsx(
-                'flex text-sm bg-blue-600 rounded-lg px-4 py-2 hover:bg-blue-500',
+                'flex justify-center text-base font-bold text-white bg-blue-600 rounded-lg px-4 py-2 hover:bg-blue-800',
                 className,
             )}
         >

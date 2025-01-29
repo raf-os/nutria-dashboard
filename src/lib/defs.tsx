@@ -22,13 +22,15 @@ type DashboardRoute = {
     id: number;
     name: string;
     route: string;
+    icon?: string | undefined;
 }
 
-export function buildDashboardRoute(_id: number, _name: string, _route: string): DashboardRoute {
+export function buildDashboardRoute(_id: number, _name: string, _route: string | null, { icon }: {icon?: string} = {}): DashboardRoute {
     const myroute: DashboardRoute = {
         id: _id,
         name: _name,
-        route: `/dashboard/${_route}`,
+        route: _route!=null? `/dashboard/${_route}`: '#',
+        ...(icon && {icon: icon}),
     }
     return myroute;
 }
