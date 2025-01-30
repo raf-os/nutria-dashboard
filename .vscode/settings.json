@@ -22,6 +22,10 @@
         {
             "folderPath": "nutria-dashboard/src/app/dashboard/",
             "color": "foldercolorizer.color_cc6600"
+        },
+        {
+            "folderPath": "nutria-dashboard/src/actions/",
+            "color": "foldercolorizer.color_cccc00"
         }
     ]
 }

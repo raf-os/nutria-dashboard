@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { Metadata } from "next";
+import { InputText, CheckBox } from "@/components/common/form_elements";
 
 export const metadata: Metadata = {
     title: 'Configurações',
@@ -20,7 +21,7 @@ function ContentTable({ children, className, id }: { children: React.ReactNode; 
         <div
             id={id}
             className={clsx(
-                'w-full px-2 rounded-lg bg-slate-600 text-(--foreground)',
+                'w-full p-3 rounded-lg bg-slate-600 text-(--foreground)',
                 className,
             )}
         >
@@ -29,12 +30,25 @@ function ContentTable({ children, className, id }: { children: React.ReactNode; 
     )
 }
 
+function ContentTableTitle({children} : {children: React.ReactNode}) {
+    return (
+        <h1 className="text-3xl font-bold pl-2 mb-4">
+            {children}
+        </h1>
+    )
+}
+
 export default function UserConfigPage() {
     return (
-        <>
+        <form>
             <ContentTable>
-                test
+                <ContentTableTitle>Configurações de Conta</ContentTableTitle>
+                    <div className="flex flex-col gap-2">
+                        <CheckBox id="test1">Yes</CheckBox>
+                        <CheckBox id="test2">checkbox</CheckBox>
+                        <InputText id="input-test-1" label="input label">as</InputText>
+                    </div>
             </ContentTable>
-        </>
+        </form>
     )
 }
