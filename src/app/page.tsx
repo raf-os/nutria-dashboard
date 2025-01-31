@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import Button from "@/components/common/button";
 import Link from "next/link";
+import dbConnect from "@/lib/db";
 
 export default function Home() {
   return (

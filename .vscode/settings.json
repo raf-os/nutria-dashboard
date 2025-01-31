@@ -21,11 +21,21 @@
         },
         {
             "folderPath": "nutria-dashboard/src/app/dashboard/",
-            "color": "foldercolorizer.color_cc6600"
+            "color": "foldercolorizer.color_00ff66",
+            "badge": "db"
         },
         {
             "folderPath": "nutria-dashboard/src/actions/",
             "color": "foldercolorizer.color_cccc00"
+        },
+        {
+            "folderPath": "nutria-dashboard/src/app/(auth)/",
+            "badge": "au"
+        },
+        {
+            "folderPath": "nutria-dashboard/src/app/api/auth/[...nextauth]/",
+            "badge": "⚙️",
+            "color": "foldercolorizer.color_ffcc33"
         }
     ]
 }
