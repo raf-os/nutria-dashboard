@@ -11,7 +11,17 @@ export default function Home() {
     <div className="flex min-h-dvh justify-center items-center py-4 px-4 lg:px-0">
       <div className="flex flex-col flex-nowrap w-full lg:w-[640px] lg:max-h-dvh p-6 lg:py-10 justify-items-center bg-slate-300 rounded-xl text-gray-900">
 
-        <h1 className="text-center font-bold text-2xl mb-3">
+        <LoginForm />
+
+      </div>
+    </div>
+  )
+}
+
+function LoginForm() {
+  return (
+    <>
+      <h1 className="text-center font-bold text-2xl mb-3">
           NutrIA Dashboard - Login
         </h1>
 
@@ -19,12 +29,28 @@ export default function Home() {
           <LoginInputField name="email" placeholder="Email" type="email" />
           <LoginInputField name="password" placeholder="Password" type="password" />
 
-          <p>Don't have an account? <Link className="link-blue" href="">Register here</Link></p>
+          <p>Don't have an account? <Link className="link-blue" href="?action=signup">Register here</Link></p>
 
           <Button className="w-11/12">Log In</Button>
         </form>
-      </div>
-    </div>
+    </>
+  )
+}
+
+function RegisterForm() {
+  return (
+    <>
+      <h1 className="text-center font-bold text-2xl mb-3">
+          NutrIA Dashboard - Register
+        </h1>
+
+        <form className="flex flex-col gap-4 items-center">
+          <LoginInputField name="email" placeholder="Email" type="email" />
+          <LoginInputField name="password" placeholder="Password" type="password" />
+
+          <Button className="w-11/12">Sign Up</Button>
+        </form>
+    </>
   )
 }
 
